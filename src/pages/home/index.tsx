@@ -56,19 +56,20 @@ const Home: React.FC = () => {
         <div className={Styles["overview__main"]}>
           <div className={Styles["title-panel"]}>
             <div>
-              <span className={Styles["sub-title"]}>First peer-to-peer</span>
+              <span className={Styles["sub-title"]}>
+                The fastest private node
+              </span>
             </div>
             <div>
-              <span className={Styles["sub-title"]}>trading protocol</span>
+              <span className={Styles["sub-title"]}>
+                helps you find the golden doge
+              </span>
             </div>
           </div>
 
           <div className={Styles["main-content"]}>
             <div className={Styles["sub-content"]}>
-              <div
-                className={Styles["launch-btn"]}
-                onClick={() => onJumpUrl()}
-              >
+              <div className={Styles["launch-btn"]} onClick={() => onJumpUrl()}>
                 Download App
               </div>
 
