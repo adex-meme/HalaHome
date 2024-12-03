@@ -1,1 +1,1 @@
-export const GITHUB_URL = "https://github.com/orgs/DineroZone";
+export const Privacy_URL = "https://privacy.adex.today";

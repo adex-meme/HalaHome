@@ -5,7 +5,7 @@ import classNames from "classnames";
 import LogoImg from "@/assets/images/logo.png";
 
 import Styles from "./index.module.less";
-import { GITHUB_URL } from "./data";
+import { Privacy_URL } from "./data";
 
 const enum HEADER_TAB {
   HOME,
@@ -55,9 +55,9 @@ const Header: React.FC<HeaderCompProps> = () => {
     navigate("/#roadmap");
   };
 
-  const onToDoc = () => {
-    navigate('/doc');
-  }
+  // const onToDoc = () => {
+  //   navigate('/doc');
+  // }
 
   // const onToDataGraph = () => {
   //   navigate("/data-graph");
@@ -116,14 +116,14 @@ const Header: React.FC<HeaderCompProps> = () => {
             >
               Data Graph
             </div> */}
-            <div className={Styles["header__nav-item"]} onClick={onToDoc}>
+            {/* <div className={Styles["header__nav-item"]} onClick={onToDoc}>
               Docs
-            </div>
+            </div> */}
             <div
               className={Styles["header__nav-item"]}
-              onClick={() => onJumpUrl(GITHUB_URL)}
+              onClick={() => onJumpUrl(Privacy_URL)}
             >
-              Github
+              Privacy
             </div>
           </div>
         </div>

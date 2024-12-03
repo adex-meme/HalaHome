@@ -8,10 +8,11 @@ import RoadMapImg from "@/assets/images/roadmap.png";
 import HomeBgImg from '@/assets/images/bg.png';
 import HomeFeatImg from '@/assets/images/feat.png';
 
-import { APP_URL } from "./data";
+// import { APP_URL } from "./data";
 
 import Styles from "./index.module.less";
 import classNames from "classnames";
+import { message } from "antd";
 
 const Home: React.FC = () => {
   const location = useLocation();
@@ -33,7 +34,7 @@ const Home: React.FC = () => {
 
   const onJumpUrl = (url?: string) => {
     if (!url) {
-      return;
+      return message.info("comming soon...");
     }
 
     window.open(url);
@@ -66,9 +67,9 @@ const Home: React.FC = () => {
             <div className={Styles["sub-content"]}>
               <div
                 className={Styles["launch-btn"]}
-                onClick={() => onJumpUrl(APP_URL)}
+                onClick={() => onJumpUrl()}
               >
-                Launch App
+                Download App
               </div>
 
               <div className={Styles["short-desc"]}>
