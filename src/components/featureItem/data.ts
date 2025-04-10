@@ -53,7 +53,7 @@ export const FEATURE_ITEM_HASH = {
   [FeatureType.OpenAndFair]: {
     title: "Community",
     content:
-      "ADex builds a trusted and sustainable community based on Crypto technology.",
+      "Hala builds a trusted and sustainable community based on Crypto technology.",
     icon: OpenAndFairImg,
     iconActive: OpenAndFairActiveImg,
   },
