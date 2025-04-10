@@ -39,7 +39,7 @@ export const FEATURE_ITEM_HASH = {
   [FeatureType.Sustainable]: {
     title: "Privacy",
     content:
-      "The anonymous construction of Wbe3 identities protects user's' privacy when they engage in various interactions.",
+      "The anonymous construction of AI identities protects user's' privacy when they engage in various interactions.",
     icon: PrivacyImg,
     iconActive: PrivacyActiveImg,
   },
@@ -53,7 +53,7 @@ export const FEATURE_ITEM_HASH = {
   [FeatureType.OpenAndFair]: {
     title: "Community",
     content:
-      "Hala builds a trusted and sustainable community based on Crypto technology.",
+      "Hala builds a trusted and sustainable community based on AI technology.",
     icon: OpenAndFairImg,
     iconActive: OpenAndFairActiveImg,
   },

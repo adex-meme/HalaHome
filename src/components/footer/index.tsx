@@ -27,12 +27,12 @@ const LINK_LIST = [
   {
     name: "telegram",
     icon: TgImg,
-    url: "https://t.me/DineroLabs",
+    url: "https://t.me/Halafinance",
   },
   {
     name: "x",
     icon: XImg,
-    url: "https://x.com/dinerozone",
+    url: "https://x.com/Halafinance",
   },
 ];
 
@@ -50,7 +50,7 @@ const Footer: React.FC<FooterCompProps> = () => {
         <div className={Styles["intro"]}>
           <img className={Styles["intro-icon"]} src={IntroImg} alt="intro" />
           <div className={Styles["intro-content"]}>
-            Hala is a new generation Dex tool that combines super nodes and AI
+            Hala is a new generation AI tool that combines super nodes and AI
             big data analysis work. Use ultra fast speed and intelligent
             analysis to help users discover good projects.
           </div>

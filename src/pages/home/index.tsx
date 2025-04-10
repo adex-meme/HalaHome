@@ -57,12 +57,12 @@ const Home: React.FC = () => {
           <div className={Styles["title-panel"]}>
             <div>
               <span className={Styles["sub-title"]}>
-                The fastest private node
+                The Bigdata And AI engine
               </span>
             </div>
             <div>
               <span className={Styles["sub-title"]}>
-                helps you find the golden doge
+                take you to see the feature
               </span>
             </div>
           </div>
@@ -74,8 +74,8 @@ const Home: React.FC = () => {
               </div>
 
               <div className={Styles["short-desc"]}>
-                Swap and earn anything{" "}
-                <span className={Styles["agg"]}>safely</span>
+                AI and Bigdata is {" "}
+                <span className={Styles["agg"]}>anything</span>
               </div>
             </div>
             <div className={Styles["sub-detail"]}>

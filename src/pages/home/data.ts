@@ -1,1 +1,1 @@
-export const APP_URL = "https://app.dinero.zone";
+export const APP_URL = "https://app.hala.finance";
