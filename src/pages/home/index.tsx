@@ -57,12 +57,12 @@ const Home: React.FC = () => {
           <div className={Styles["title-panel"]}>
             <div>
               <span className={Styles["sub-title"]}>
-                The Bigdata And AI engine
+                Professionals use professional systems.
               </span>
             </div>
             <div>
               <span className={Styles["sub-title"]}>
-                take you to see the feature
+                High concurrency, fast, and intelligent.
               </span>
             </div>
           </div>
@@ -70,12 +70,12 @@ const Home: React.FC = () => {
           <div className={Styles["main-content"]}>
             <div className={Styles["sub-content"]}>
               <div className={Styles["launch-btn"]} onClick={() => onJumpUrl()}>
-                Download App
+                Launch App
               </div>
 
               <div className={Styles["short-desc"]}>
-                AI and Bigdata is {" "}
-                <span className={Styles["agg"]}>anything</span>
+                Get gold dog {" "}
+                <span className={Styles["agg"]}>faster</span>
               </div>
             </div>
             <div className={Styles["sub-detail"]}>
