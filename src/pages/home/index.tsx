@@ -57,12 +57,12 @@ const Home: React.FC = () => {
           <div className={Styles["title-panel"]}>
             <div>
               <span className={Styles["sub-title"]}>
-                Professionals use professional systems.
+                High concurrency, fast,
               </span>
             </div>
             <div>
               <span className={Styles["sub-title"]}>
-                High concurrency, fast, and intelligent.
+                and AI.
               </span>
             </div>
           </div>
