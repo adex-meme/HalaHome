@@ -3,16 +3,34 @@
   overflow: hidden;
 
   height: 100vh;
-  min-height: 750px;
+  max-height: 100vw;
+  //min-height: 750px;
   box-sizing: border-box;
-  background-color: #000;
-
+ /* 使图片适应容器 */
+  /* 居中对齐 */
+  //background-color: #000;
+  background: url("/public/images/css-image/overview-bg.png") no-repeat left top;
+  background-size: cover;
   &.is-mobile {
     height: 750px;
   }
 
   &__main {
+    @media screen and (max-width: 500px) {
+      /* 小于等于 500px 时的样式 */
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%;
+      .title-panel{
+        height: fit-content!important;
+      }
+      .main-content{
+        flex-grow: 1;
+      }
+    }
+
     width: 1200px;
+    //max-width: 1200PX;
     height: 100%;
     margin: 0 auto;
     padding-top: 133px;
@@ -21,16 +39,17 @@
     position: relative;
 
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+
     .title-panel {
       display: flex;
       flex-direction: column;
-
-      position: absolute;
-      top: 183px;
-      left: 0;
+      height: 100%;
+      //position: absolute;
+      //top: 183px;
+      //left: 0;
     }
 
     .sub-title {
@@ -39,88 +58,106 @@
       font-size: 59px;
       line-height: 80px;
       text-align: left;
-      background: linear-gradient(270deg, #FF9FA5 0%, #6560FB 48%, #56A3FF 99%);
+      background-color: transparent;
+      //background: linear-gradient(270deg, #FF9FA5 0%, #6560FB 48%, #56A3FF 99%);
+      //-webkit-background-clip: text;
+      //-webkit-text-fill-color: transparent;
+    }
+    .sub-title-gradient {
+      font-family: Poppins, Poppins;
+      font-weight: 600;
+      font-size: 59px;
+      line-height: 80px;
+      text-align: left;
+      //background-color: transparent;
+      background: linear-gradient(90deg, #87FFDB 0%, #5BC4FF 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-    }
 
+    }
+    .launch-btn {
+      margin-top: 38px;
+      width: 170px;
+
+      height: 50px;
+
+      margin-bottom: 37px;
+      border-radius: 12px;
+      background: #373DAC;
+      cursor: pointer;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-weight: 500;
+      font-size:20px;
+      color: #FFFFFF;
+      /* Frame 35 */
+
+
+      background: linear-gradient(83.03deg, #5BC4FF -2.87%, #4D5EFF 25.82%, #6362FF 67.15%, #C970FF 104.18%, #FF9FA5 139.5%);
+
+
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+    .description{
+      white-space: pre-line;
+      font-family: Poppins, Poppins;
+      font-size: 20px;
+      line-height: 1.3;
+      margin-top: 38px;
+    }
+    .tooltip{
+      position: absolute;
+      width: 100%;
+      color: #A0A0AC;
+      bottom:20px;
+    }
     .main-content {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-
-      .sub-content {
-        padding-bottom: 104px;
-
-        .launch-btn {
-          width: 328px;
-          height: 83px;
-          margin-bottom: 37px;
-          border-radius: 19px;
-          background: #373DAC;
-          cursor: pointer;
-
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          font-weight: 500;
-          font-size: 34px;
-          color: #FFFFFF;
-
-          &:hover {
-            filter: brightness(110%);
-          }
-        }
-
-        .short-desc {
-          font-family: Poppins, Poppins;
-          font-weight: 400;
-          font-size: 30px;
-          color: #A0A0AC;
-          line-height: 45px;
-          text-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-          text-align: left;
-          white-space: nowrap;
-
-          .agg {
-            background: linear-gradient(270deg, #6cd5bd 0%, #47abd7 99%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-        }
+      align-self: center;
+      flex-direction: column;
+      margin-bottom: 200px;
+      //justify-content: space-between;
+      //align-items: flex-end;
+      .feat {
+        width: 600px;
+        //height: 100%;
+        //height: 150px;
       }
 
-      .sub-detail {
-        width: 933px;
-        height: 587px;
-        padding-bottom: 221px;
-        box-sizing: border-box;
-        position: relative;
 
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-
-        .bg {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          bottom: 0;
-          right: -58px;
-        }
-
-        .feat {
-          width: 676px;
-          height: 150px;
-        }
-      }
+      //.sub-detail {
+      //  width: 933px;
+      //  height: 587px;
+      //  padding-bottom: 221px;
+      //  box-sizing: border-box;
+      //  position: relative;
+      //
+      //  display: flex;
+      //  justify-content: flex-end;
+      //  align-items: flex-end;
+      //
+      //  .bg {
+      //    position: absolute;
+      //    width: 100%;
+      //    height: 100%;
+      //    bottom: 0;
+      //    right: -58px;
+      //  }
+      //
+      //
+      //}
     }
   }
 }
 
 .architecture {
   width: 1200px;
+  max-width: 1200PX;
   margin: 0 auto;
 
   display: flex;
@@ -136,7 +173,7 @@
   width: 1200px;
   padding-bottom: 194px;
   margin: 0 auto;
-
+  max-width: 1200PX;
   display: flex;
   align-items: center;
   flex-direction: column;

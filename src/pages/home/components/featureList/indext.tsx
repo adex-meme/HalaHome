@@ -54,7 +54,7 @@ const FeatureList: React.FC = () => {
 
   const stopShowNext = () => {
     clearTimeout(timerRef.current);
-  }
+  };
 
   const onMouseEnterItem = (index: number) => {
     setCurActive(index);
@@ -64,7 +64,7 @@ const FeatureList: React.FC = () => {
 
   const onMouseLeaveItem = () => {
     showNext();
-  }
+  };
 
   const caculateLeft = () => {
     const moveDir = getMoveOffset(
