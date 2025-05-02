@@ -6,6 +6,7 @@ import LogoImg from "@/assets/images/logo.png";
 
 import Styles from "./index.module.less";
 import { Privacy_URL } from "./data";
+import { useTranslation } from "react-i18next";
 
 const enum HEADER_TAB {
   HOME,
@@ -18,7 +19,7 @@ interface HeaderCompProps {}
 const Header: React.FC<HeaderCompProps> = () => {
   const navigate = useNavigate();
   const location = useLocation();
-
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<HEADER_TAB>(HEADER_TAB.HOME);
   const [isTop, setIsTop] = useState(true);
 
@@ -55,13 +56,16 @@ const Header: React.FC<HeaderCompProps> = () => {
     navigate("/#roadmap");
   };
 
-  // const onToDoc = () => {
-  //   navigate('/doc');
-  // }
+  const onToDoc = () => {
+    onJumpUrl("");
+  };
 
   // const onToDataGraph = () => {
   //   navigate("/data-graph");
   // };
+  const onToGithub = () => {
+    onJumpUrl("");
+  };
 
   const onJumpUrl = (url?: string) => {
     if (!url) {
@@ -98,7 +102,7 @@ const Header: React.FC<HeaderCompProps> = () => {
               })}
               onClick={onToHome}
             >
-              Home
+              {t("header.home")}
             </div>
             <div
               className={classNames(Styles["header__nav-item"], {
@@ -106,7 +110,7 @@ const Header: React.FC<HeaderCompProps> = () => {
               })}
               onClick={onToRoadMap}
             >
-              Roadmap
+              {t("header.roadMap")}
             </div>
             {/* <div
               className={classNames(Styles["header__nav-item"], {
@@ -116,14 +120,18 @@ const Header: React.FC<HeaderCompProps> = () => {
             >
               Data Graph
             </div> */}
-            {/* <div className={Styles["header__nav-item"]} onClick={onToDoc}>
-              Docs
-            </div> */}
+
             <div
               className={Styles["header__nav-item"]}
               onClick={() => onJumpUrl(Privacy_URL)}
             >
-              Privacy
+              {t("header.privacy")}
+            </div>
+            <div className={Styles["header__nav-item"]} onClick={onToDoc}>
+              {t("header.docs")}
+            </div>
+            <div className={Styles["header__nav-item"]} onClick={onToGithub}>
+              GitHub
             </div>
           </div>
         </div>

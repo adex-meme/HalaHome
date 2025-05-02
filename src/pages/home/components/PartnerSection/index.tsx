@@ -21,7 +21,7 @@ export const PartnerSection: React.FC = () => {
   return (
     <div className={Styles["partner-section"]}>
       <div className={Styles["partner-section__container"]}>
-        <div className={Styles["main-title"]}>{t("partner.title")}</div>
+        <div className={Styles["partner-title"]}>{t("partner.title")}</div>
         <Marquee gradient={false}>
           <div className={Styles["partner-list"]}>
             {LINE1.map((img, index) => (

@@ -1,5 +1,12 @@
 export const en = {
   translation: {
+    header: {
+      home: "Home",
+      roadMap: "Roadmap",
+      privacy: "Privacy",
+      docs: "Docs",
+      dataGraph: "Data Graph",
+    },
     overview: {
       title: {
         a: "Build a self centered",
