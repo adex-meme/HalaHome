@@ -9,9 +9,9 @@ export const en = {
     },
     overview: {
       title: {
-        a: "with full asset control",
-        b: "The fastest way to chat & trade with Telegram friends",
-        c: "100% on-chain decentralized transactions.",
+        a: "Decentralized asset",
+        b: "and seamless market news drive rapid",
+        c: "transactions on the chain.",
       },
       description:
         "Safe Fast decentralized",
