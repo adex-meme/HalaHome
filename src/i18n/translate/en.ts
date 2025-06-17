@@ -9,8 +9,8 @@ export const en = {
     },
     overview: {
       title: {
-        a: "Safer, Smarter, Faster",
-        b: "Wallet + AI for Telegram",
+        a: "Safer,Smarter,Faster",
+        b: "Wallet+AI Telegram",
         c: "rapid transactions on chain.",
       },
       description:
