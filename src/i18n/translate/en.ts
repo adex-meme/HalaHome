@@ -10,11 +10,11 @@ export const en = {
     overview: {
       title: {
         a: "Decentralized asset",
-        b: "and seamless market news drive",
-        c: "rapid transactions on the chain.",
+        b: "market news drive",
+        c: "rapid transactions on chain.",
       },
       description:
-        "Safe Fast decentralized",
+        "",
       button: "Download App",
       tooltip:
         "",
