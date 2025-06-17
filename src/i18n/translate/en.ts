@@ -9,8 +9,8 @@ export const en = {
     },
     overview: {
       title: {
-        a: "Decentralized asset",
-        b: "market news drive",
+        a: "Safer, Smarter, Faster",
+        b: "Wallet + AI for Telegram",
         c: "rapid transactions on chain.",
       },
       description:

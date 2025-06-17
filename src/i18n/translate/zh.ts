@@ -9,8 +9,8 @@ export const zh = {
     },
     overview: {
       title: {
-        a: "完全资产自主管理,",
-        b: "跟随Telegram好友最快出击,",
+        a: "安全、智能、快速",
+        b: "在HALA上跟随Telegram好友最快出击",
         c: "100%链上交易",
       },
       description:
