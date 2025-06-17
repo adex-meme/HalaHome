@@ -57,7 +57,7 @@ const Header: React.FC<HeaderCompProps> = () => {
   };
 
   const onToDoc = () => {
-    onJumpUrl("");
+    onJumpUrl("https://docs.hala.finance");
   };
 
   // const onToDataGraph = () => {

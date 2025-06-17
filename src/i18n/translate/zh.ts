@@ -14,7 +14,7 @@ export const zh = {
         c: "100%链上交易",
       },
       description:
-        "安全 快速 智能",
+        "",
       button: "下载应用",
       tooltip:
         "",

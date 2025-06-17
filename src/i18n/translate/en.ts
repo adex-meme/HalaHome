@@ -14,7 +14,7 @@ export const en = {
         c: "rapid transactions on chain.",
       },
       description:
-        "safe fast AI",
+        "",
       button: "Download App",
       tooltip:
         "",
