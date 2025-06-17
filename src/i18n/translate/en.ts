@@ -9,39 +9,39 @@ export const en = {
     },
     overview: {
       title: {
-        a: "Build a self centered",
-        b: "Crypto ecosystem",
-        c: "for leaders",
+        a: "with full asset control",
+        b: "The fastest way to chat & trade with Telegram friends",
+        c: "100% on-chain decentralized transactions.",
       },
       description:
-        "Your community is your exchange - fan \n trading, with automatic transaction fees \n charged on the chain",
-      button: "Start",
+        "Safe Fast decentralized",
+      button: "Download App",
       tooltip:
-        "Start your own trading empire with zero cost and collect 9 ‰ while lying down",
+        "",
     },
     discover: {
-      title: "Discover why builders choose HALA",
+      title: "Discover why users choose HALA?",
       list: {
         quick: {
-          title: "Quickly build KOL's own Dex trading system",
+          title: "Seamlessly connect Telegram friends and messages",
           content:
-            "Earn up to 1% commission\nHelp fans trade quickly\nBuild a private domain to enhance retention",
+            "HALA is a modified version of Telegram that enhances AI analysis capabilities for messages. Try analyzing chat information.\nBy analyzing Crypto-related information and displaying the latest market trends in real-time, you can gain a comprehensive understanding at a glance.",
         },
         high: {
-          title: "High concurrency and fast trading tools",
-          content: "",
+          title: "Securely manage assets in a decentralized manner",
+          content: "All private keys are generated locally, and only you have access to your private keys.\nHALA will never upload any of your information, including private keys and chat history.",
         },
         sharing: {
-          title: "Public domain traffic sharing",
-          content: "",
+          title: "The fastest insight into market trends",
+          content: "Powerful backend support, rapid market synchronization.\nHALA will also recommend popular channels in the market for you to better obtain market information.",
         },
         analysis: {
-          title: "Fan information analysis",
-          content: "",
+          title: "Based on consensus, drive the development of community ecology",
+          content: "We believe that the crypto world should be driven by consensus, build communities, and be fully democratic.\nBased on consensus, we can create a new world.",
         },
         tool: {
-          title: "KOL Assistance Tool",
-          content: "",
+          title: "Generate exclusive DID to connect with the real world",
+          content: "Based on powerful social networks and Crypto systems, we generate a unique identity for you.\nHALA not only generates unique Crypto information for you, but also integrates your local information in a decentralized manner, completing a comprehensive AI shaping of your image.",
         },
       },
     },
