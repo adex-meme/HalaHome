@@ -64,7 +64,7 @@ const Header: React.FC<HeaderCompProps> = () => {
   //   navigate("/data-graph");
   // };
   const onToGithub = () => {
-    onJumpUrl("");
+    onJumpUrl("https://github.com/HALA-finance");
   };
 
   const onJumpUrl = (url?: string) => {
