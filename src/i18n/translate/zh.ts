@@ -1,20 +1,20 @@
 export const zh = {
   translation: {
     header: {
-      home: "Home",
-      roadMap: "Roadmap",
-      privacy: "Privacy",
-      docs: "Docs",
+      home: "首页",
+      roadMap: "路线图",
+      privacy: "隐私协议",
+      docs: "文档",
       dataGraph: "Data Graph",
     },
     overview: {
       title: {
         a: "完全资产自主管理,",
-        b: "与Telegram好友聊天最快交易,",
+        b: "跟随Telegram好友最快出击,",
         c: "100%链上交易",
       },
       description:
-        "安全快速的去中心化交易",
+        "安全 快速 智能",
       button: "下载应用",
       tooltip:
         "",
@@ -46,49 +46,49 @@ export const zh = {
       },
     },
     arch: {
-      title: "Technical Architecture",
+      title: "生态架构",
     },
     roadMap: {
-      title: "Road Map",
+      title: "路线图",
     },
     partner: {
-      title: "Partnership",
+      title: "受到信任",
     },
     featList: {
       privacy: {
-        title: "Security",
+        title: "安全",
         content:
-          "All interactions are accomplished solely through smart contracts, and operations require personal confirmation to ensure asset security.	",
+          "所有交互都是通过智能合约完成的，操作需要个人确认以确保资产安全",
       },
       data: {
-        title: "Open",
+        title: "开放",
         content:
-          "The protocol is fully open-source and verifiable. All interactions are established on the blockchain network.",
+          "该协议是完全开源和可验证的。所有交互都建立在区块链网络上。",
       },
       sustainable: {
-        title: "Privacy",
+        title: "隐私",
         content:
-          "The anonymous construction of AI identities protects user's' privacy when they engage in various interactions.",
+          "AI身份的匿名构建保护用户在各种交互中的隐私。",
       },
       ai: {
         title: "AI",
         content:
-          "The intelligent engine helps users analyze the market, intelligently examines community history and public opinions, and provides more abundant opinions.",
+          "智能引擎帮助用户分析市场，智能审查社区历史和公众意见，提供更丰富的观点。",
       },
       openAndFair: {
-        title: "Community",
+        title: "社区",
         content:
-          "Hala builds a trusted and sustainable community based on AI technology.",
+          "Hala建立了一个基于AI技术的可信赖和可持续的社区。",
       },
     },
     footer: {
       intro:
-        "Hala is a new generation AI tool that combines super nodes and AI big data analysis work. Use ultra fast speed and intelligent analysis to help users discover good projects.",
+        "Hala是新一代人工智能工具,结合了超级节点和人工智能大数据分析工作。使用超高速和智能分析帮助用户发现好的项目.",
       dapps: {
         title: "DApps",
         iphone: "iPhone/iPad",
         android: "Android",
-        web: "Mobile web/Web browser",
+        web: "移动网页/浏览器",
       },
     },
   },

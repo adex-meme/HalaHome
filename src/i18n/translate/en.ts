@@ -14,7 +14,7 @@ export const en = {
         c: "rapid transactions on chain.",
       },
       description:
-        "",
+        "safe fast AI",
       button: "Download App",
       tooltip:
         "",
@@ -52,7 +52,7 @@ export const en = {
       title: "Road Map",
     },
     partner: {
-      title: "Partnership",
+      title: "Trusted by",
     },
     featList: {
       privacy: {
