@@ -20,28 +20,28 @@ export const en = {
         "",
     },
     discover: {
-      title: "Discover why users choose HALA?",
+      title: "Why \n HALA?",
       list: {
         quick: {
           title: "Seamlessly connect Telegram friends and messages",
           content:
-            "HALA is a modified version of Telegram that enhances AI analysis capabilities for messages. Try analyzing chat information.\nBy analyzing Crypto-related information and displaying the latest market trends in real-time, you can gain a comprehensive understanding at a glance.",
+            "·HALA is a modified version of Telegram that enhances AI analysis capabilities for messages. Try analyzing chat information.\n·By analyzing Crypto-related information and displaying the latest market trends in real-time, you can gain a comprehensive understanding at a glance.",
         },
         high: {
           title: "Securely manage assets in a decentralized manner",
-          content: "All private keys are generated locally, and only you have access to your private keys.\nHALA will never upload any of your information, including private keys and chat history.",
+          content: "·All private keys are generated locally, and only you have access to your private keys.\n·HALA will never upload any of your information, including private keys and chat history.",
         },
         sharing: {
           title: "The fastest insight into market trends",
-          content: "Powerful backend support, rapid market synchronization.\nHALA will also recommend popular channels in the market for you to better obtain market information.",
+          content: "·Powerful backend support, rapid market synchronization.\n·HALA will also recommend popular channels in the market for you to better obtain market information.",
         },
         analysis: {
           title: "Based on consensus, drive the development of community ecology",
-          content: "We believe that the crypto world should be driven by consensus, build communities, and be fully democratic.\nBased on consensus, we can create a new world.",
+          content: "·We believe that the crypto world should be driven by consensus, build communities, and be fully democratic.\n·Based on consensus, we can create a new world.",
         },
         tool: {
           title: "Generate exclusive DID to connect with the real world",
-          content: "Based on powerful social networks and Crypto systems, we generate a unique identity for you.\nHALA not only generates unique Crypto information for you, but also integrates your local information in a decentralized manner, completing a comprehensive AI shaping of your image.",
+          content: "·Based on powerful social networks and Crypto systems, we generate a unique identity for you.\n·HALA not only generates unique Crypto information for you, but also integrates your local information in a decentralized manner, completing a comprehensive AI shaping of your image.",
         },
       },
     },
