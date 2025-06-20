@@ -83,7 +83,7 @@ export const zh = {
     },
     footer: {
       intro:
-        "Hala是新一代人工智能工具,结合了超级节点和人工智能大数据分析工作。使用超高速和智能分析帮助用户发现好的项目.",
+        "HALA是新一代区块链智能生态系统,深度融合社交、AI与去中心化钱包,通过Telegram等社交数据赋能用户快速安全决策,打造集行情分析、链上交易、社区治理于一体的DAO化利益共享体系。",
       dapps: {
         title: "DApps",
         iphone: "iPhone/iPad",
