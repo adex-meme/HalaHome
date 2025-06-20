@@ -23,7 +23,7 @@ export const en = {
       title: "Why \n HALA?",
       list: {
         quick: {
-          title: "Seamlessly connect Telegram friends and messages",
+          title: "Seamlessly connect Telegram messages and Wallet",
           content:
             "·HALA is a modified version of Telegram that enhances AI analysis capabilities for messages. Try analyzing chat information.\n·By analyzing Crypto-related information and displaying the latest market trends in real-time, you can gain a comprehensive understanding at a glance.",
         },
