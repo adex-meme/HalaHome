@@ -83,7 +83,7 @@ export const en = {
     },
     footer: {
       intro:
-        "HALA is a next-gen blockchain ecosystem integrating social intelligence, AI analytics and decentralized wallet, transforming Telegram data into actionable insights for secure, instant trading while building a DAO-based value-sharing community.",
+        "HALA is a decentralized trading ecosystem powered by social networks and AI technology, integrating decentralized social data with intelligent analysis to seamlessly connect trading behaviors. Currently deeply compatible with the Telegram ecosystem to efficiently connect KOLs and retail investors, while featuring an open architecture for future multi-platform expansion.",
       dapps: {
         title: "DApps",
         iphone: "iPhone/iPad",
