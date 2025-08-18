@@ -9,15 +9,15 @@ export const en = {
     },
     overview: {
       title: {
-        a: "Safer,Smarter,Faster",
-        b: "Wallet+AI Telegram rapid transactions",
+        a: "",
+        b: "Wallet+AI Telegram rapid swap",
         c: "on chain.",
       },
       description:
         "",
       button: "Download App",
       tooltip:
-        "",
+        "Security • Privacy • On-chain Swap",
     },
     discover: {
       title: "Why \n HALA?",

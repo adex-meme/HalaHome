@@ -80,7 +80,7 @@ const Home: React.FC = () => {
             </div>
             <div
               className={Styles["launch-btn"]}
-              onClick={() => onJumpUrl("https://t.me/Micheal_Hala")}
+              onClick={() => onJumpUrl("https://download.hala.finance")}
             >
               {t("overview.button")}
             </div>

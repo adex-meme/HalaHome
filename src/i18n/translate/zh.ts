@@ -9,9 +9,9 @@ export const zh = {
     },
     overview: {
       title: {
-        a: "安全、智能、快速",
-        b: "在HALA上跟随Telegram好友最快出击",
-        c: "100%链上交易",
+        a: "",
+        b: "自托管钱包，链上交易",
+        c: "一体化融入 Telegram",
       },
       description:
         "",
