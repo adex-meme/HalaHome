@@ -32,15 +32,11 @@ const Footer: React.FC<FooterCompProps> = () => {
     return [
       {
         name: t("footer.dapps.iphone"),
-        url: "",
+        url: "https://download.hala.finance",
       },
       {
         name: t("footer.dapps.android"),
-        url: "",
-      },
-      {
-        name: t("footer.dapps.web"),
-        url: "",
+        url: "https://download.hala.finance",
       },
     ];
   }, [t]);

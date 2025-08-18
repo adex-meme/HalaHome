@@ -88,7 +88,6 @@ export const zh = {
         title: "DApps",
         iphone: "iPhone/iPad",
         android: "Android",
-        web: "移动网页/浏览器",
       },
     },
   },

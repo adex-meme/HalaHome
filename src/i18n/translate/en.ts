@@ -88,7 +88,6 @@ export const en = {
         title: "DApps",
         iphone: "iPhone/iPad",
         android: "Android",
-        web: "Mobile web/Web browser",
       },
     },
   },
