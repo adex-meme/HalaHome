@@ -9,9 +9,9 @@ export const zh = {
     },
     overview: {
       title: {
-        a: "",
-        b: "自托管钱包，链上交易",
-        c: "一体化融入 Telegram",
+        a: "自托管钱包，链上交易",
+        b: "一体化融入 Telegram",
+        c: "",
       },
       description:
         "",

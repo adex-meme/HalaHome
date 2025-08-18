@@ -9,9 +9,9 @@ export const en = {
     },
     overview: {
       title: {
-        a: "",
-        b: "Wallet+AI Telegram rapid swap",
-        c: "on chain.",
+        a: "Rapid swap with",
+        b: "Wallet+AI Telegram on chain",
+        c: "",
       },
       description:
         "",
