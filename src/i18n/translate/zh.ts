@@ -10,7 +10,7 @@ export const zh = {
     overview: {
       title: {
         a: "自托管钱包，链上交易",
-        b: "一体化融入 Telegram",
+        b: "一体化融入 Telegram + AI",
         c: "",
       },
       description:
@@ -25,7 +25,7 @@ export const zh = {
         quick: {
           title: "无缝衔接Telegram 好友和消息",
           content:
-            "HALA是 Telegram 增减版,增加了对消息的AI分析能力,试试分析聊天信息。\n通过分析出于Crypto相关的信息，并且实时展示最新市场行情,让你一站式了解全貌。",
+            "HALA是 Telegram 增强版,增加了对消息的AI分析能力,实时分析聊天信息。\n通过分析出于Crypto相关的信息，并且实时展示最新市场行情,让你一站式了解全貌。",
         },
         high: {
           title: "安全去中心管理资产",

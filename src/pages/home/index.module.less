@@ -33,20 +33,24 @@
     //max-width: 1200PX;
     height: 100%;
     margin: 0 auto;
-    padding-top: 133px;
+    padding-top: 0;
     box-sizing: border-box;
 
     position: relative;
 
     display: flex;
     flex-direction: row;
-    align-self: center;
+    align-items: center;
     justify-content: space-between;
 
     .title-panel {
       display: flex;
       flex-direction: column;
-      height: 100%;
+      height: fit-content;
+      width: 100%;
+      max-width: 800px;
+      justify-content: center;
+      align-items: flex-start;
       //position: absolute;
       //top: 183px;
       //left: 0;
@@ -55,10 +59,11 @@
     .sub-title {
       font-family: Poppins, Poppins;
       font-weight: 600;
-      font-size: 59px;
-      line-height: 80px;
+      font-size: 52px;
+      line-height: 70px;
       text-align: left;
       background-color: transparent;
+      white-space: nowrap;
       //background: linear-gradient(270deg, #FF9FA5 0%, #6560FB 48%, #56A3FF 99%);
       //-webkit-background-clip: text;
       //-webkit-text-fill-color: transparent;
@@ -66,9 +71,10 @@
     .sub-title-gradient {
       font-family: Poppins, Poppins;
       font-weight: 600;
-      font-size: 59px;
-      line-height: 80px;
+      font-size: 52px;
+      line-height: 70px;
       text-align: left;
+      white-space: nowrap;
       //background-color: transparent;
       background: linear-gradient(90deg, #87FFDB 0%, #5BC4FF 100%);
       -webkit-background-clip: text;
@@ -120,7 +126,7 @@
       display: flex;
       align-self: center;
       flex-direction: column;
-      margin-bottom: 200px;
+      margin-bottom: 0;
       //justify-content: space-between;
       //align-items: flex-end;
       .feat {
