@@ -2,62 +2,72 @@
 
   background: url("/public/images/css-image/discover-bg.png") no-repeat left top;
   height: 855px;
+  overflow: hidden;
+  margin-top: 80px;
+
   &__container {
     height: 855px;
     width: 1200px;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 0px 0;
     //padding-top: 140px;
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
     font-weight: bold;
-    gap:130px;
+    gap: 130px;
     justify-content: space-between;
+
     @media screen and (max-width: 700px) {
       /* 小于等于 500px 时的样式 */
-      flex-direction: column!important;
-      gap:40px;
+      flex-direction: column !important;
+      gap: 40px;
       height: 1055px;
     }
-    .title-section{
+
+    .title-section {
       font-size: 54px;
       width: 650px;
       flex-shrink: 1;
     }
-    .list-section{
+
+    .list-section {
       width: 100%;
       flex-grow: 1;
+
+      :global {
+        .ant-collapse-header {
+          padding: 12px !important;
+        }
+      }
+
     }
-    .list-item{
+
+    .list-item {
       white-space: pre-line;
       font-size: 16px;
       color: white;
       font-weight: 500;
     }
-    .list-title{
 
-
-
+    .list-title {
       display: flex;
       align-items: center;
-      font-style:  normal;
+      font-style: normal;
       font-weight: 700;
       font-size: 24px;
-      line-height: 33px;
-      gap:12px;
+      line-height: 24px;
+      gap: 12px;
 
       background: linear-gradient(90.51deg, #FFFFFF 64.71%, #4B52FF 108.22%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
-      p{
 
-      }
-      img{
+      img {
         width: 40px;
-        height:40px;
+        height: 40px;
       }
 
     }

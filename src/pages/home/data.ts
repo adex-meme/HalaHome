@@ -1,1 +1,1 @@
-export const APP_URL = "https://app.hala.finance";
+export const APP_URL = "https://download.hala.finance";
