@@ -4,7 +4,8 @@ import classNames from "classnames";
 import { QRCodeSVG } from "qrcode.react";
 import { AppStoreIcon, GooglePlayIcon, AndroidIcon } from "@/components/Icons";
 import Styles from "./index.module.less";
-import HomeFeatImg from "@/assets/images/overview/feat-en.png";
+import HomeFeatImg from "@/assets/images/overview/intro.png";
+import { APP_URL } from "../../data";
 
 interface MainSectionProps {
   isMobile: () => boolean;
@@ -41,7 +42,7 @@ export const MainSection: React.FC<MainSectionProps> = ({ isMobile }) => {
               <div className={Styles["download-buttons"]}>
                 <button
                   className={Styles["download-btn"]}
-                  onClick={() => onJumpUrl("https://download.hala.finance")}
+                  onClick={() => onJumpUrl(APP_URL)}
                 >
                   <AppStoreIcon className={Styles["btn-icon"]} />
                   <span>{t("overview.appStore")}</span>
@@ -49,7 +50,7 @@ export const MainSection: React.FC<MainSectionProps> = ({ isMobile }) => {
 
                 <button
                   className={Styles["download-btn"]}
-                  onClick={() => onJumpUrl("https://download.hala.finance")}
+                  onClick={() => onJumpUrl(APP_URL)}
                 >
                   <GooglePlayIcon className={Styles["btn-icon"]} />
                   <span>{t("overview.googlePlay")}</span>
@@ -57,7 +58,7 @@ export const MainSection: React.FC<MainSectionProps> = ({ isMobile }) => {
 
                 <button
                   className={Styles["download-btn"]}
-                  onClick={() => onJumpUrl("https://download.hala.finance")}
+                  onClick={() => onJumpUrl(APP_URL)}
                 >
                   <AndroidIcon className={Styles["btn-icon"]} />
                   <span>{t("overview.android")}</span>
@@ -67,7 +68,7 @@ export const MainSection: React.FC<MainSectionProps> = ({ isMobile }) => {
               <div className={Styles["qr-section"]}>
                 <div className={Styles["qr-code"]}>
                   <QRCodeSVG 
-                    value="https://download.hala.finance"
+                    value="APP_URL"
                     size={137}
                     level="M"
                     fgColor="#000000"
