@@ -48,13 +48,13 @@ export const MainSection: React.FC<MainSectionProps> = ({ isMobile }) => {
                   <span>{t("overview.appStore")}</span>
                 </button>
 
-                <button
+                {/* <button
                   className={Styles["download-btn"]}
                   onClick={() => onJumpUrl(APP_URL)}
                 >
                   <GooglePlayIcon className={Styles["btn-icon"]} />
                   <span>{t("overview.googlePlay")}</span>
-                </button>
+                </button> */}
 
                 <button
                   className={Styles["download-btn"]}
