@@ -1,0 +1,262 @@
+.main-section {
+  position: relative;
+  min-height: 100vh;
+  background: url("/public/images/css-image/overview-bg.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 120px 0;
+
+  &.is-mobile {
+    min-height: 750px;
+    padding: 80px 0;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 60px;
+      text-align: center;
+    }
+  }
+
+  .left-content {
+    flex: 1;
+    max-width: 600px;
+  }
+
+  .title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.2;
+    margin: 0 0 48px 0;
+    color: #ffffff;
+
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+      margin-bottom: 32px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .title-gradient {
+    background: linear-gradient(90deg, #87FFDB 0%, #5BC4FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .download-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    margin-bottom: 48px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .download-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+    }
+  }
+
+  .download-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    background: linear-gradient(128deg, #5BC4FF 0%, #4D5EFF 12%, #6362FF 67%, #C970FF 100%);
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-family: "PingFang SC", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    min-width: 188px;
+    height: 52px;
+    justify-content: flex-start;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+      min-width: 160px;
+      height: 48px;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+
+  .qr-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    @media screen and (max-width: 768px) {
+      gap: 12px;
+    }
+  }
+
+  .qr-code {
+    width: 161px;
+    height: 161px;
+    padding: 12px;
+    background: #ffffff;
+    border: 1px solid #D2D2D7;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 120px;
+      height: 120px;
+      padding: 8px;
+    }
+  }
+
+  .qr-text {
+    text-align: center;
+  }
+
+  .qr-label {
+    color: #D4D4D4;
+    font-family: "PingFang SC", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  .qr-description {
+    color: #ffffff;
+    font-family: "PingFang SC", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  .security-note {
+    color: #A0A0AC;
+    font-family: "PingFang SC", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  .right-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+      flex: none;
+      width: 100%;
+    }
+  }
+
+  .phone-mockup {
+    position: relative;
+    max-width: 556px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 400px;
+    }
+
+    @media screen and (max-width: 480px) {
+      max-width: 300px;
+    }
+  }
+
+  /* Background decoration */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(91, 196, 255, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+}
