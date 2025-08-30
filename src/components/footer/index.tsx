@@ -22,10 +22,10 @@ const switchLang: Record<string, { to: string; name: string }> = {
 };
 const Footer: React.FC<FooterCompProps> = () => {
   const { t, i18n } = useTranslation();
-  const onJumpUrl = (url: string) => {
-    // if (!url) {
+  const onJumpUrl = (url: string, forceComingSoon = false) => {
+    if (!url || forceComingSoon) {
       return message.info(t("general.comingSoon"));
-    // }
+    }
 
     window.open(url);
   };
@@ -69,7 +69,7 @@ const Footer: React.FC<FooterCompProps> = () => {
             <div
               key={appInfo.name}
               className={Styles["apps-item"]}
-              onClick={() => onJumpUrl(appInfo.url)}
+              onClick={() => onJumpUrl(appInfo.url, true)}
             >
               {appInfo.name}
             </div>
