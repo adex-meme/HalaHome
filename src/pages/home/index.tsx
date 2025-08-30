@@ -7,14 +7,17 @@ import ArchitectureImg from "@/assets/images/home/arch.png";
 import ArchitectureImgZh from "@/assets/images/home/arch.png";
 import RoadMapImg from "@/assets/images/home/roadmap.png";
 import RoadMapImgZh from "@/assets/images/home/roadmap.png";
+import HomeFeatImg from "@/assets/images/overview/feat-en.png";
+import HomeFeatImgZh from "@/assets/images/overview/feat-en.png";
 
 // import { APP_URL } from "./data";
 import "@/i18n";
 import Styles from "./index.module.less";
+import classNames from "classnames";
+import { message } from "antd";
 import { useTranslation } from "react-i18next";
 import { DiscoverSection } from "@/pages/home/components/DiscoverSection";
 import { PartnerSection } from "@/pages/home/components/PartnerSection";
-import { MainSection } from "@/pages/home/components/MainSection";
 
 const Home: React.FC = () => {
   const location = useLocation();
@@ -34,6 +37,14 @@ const Home: React.FC = () => {
     }
   }, [location]);
 
+  const onJumpUrl = (url?: string) => {
+    if (!url) {
+      return message.info("comming soon...");
+    }
+
+    window.open(url);
+  };
+
   const isMobile = () => {
     const regexMobile =
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
@@ -42,7 +53,50 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <MainSection isMobile={isMobile} />
+      <div
+        className={classNames(Styles["overview"], {
+          [Styles["is-mobile"]]: isMobile(),
+        })}
+      >
+        <div className={Styles["overview__main"]}>
+          <div className={Styles["title-panel"]}>
+            <div>
+              <span className={Styles["sub-title"]}>
+                {t("overview.title.a")}
+              </span>
+            </div>
+            <div>
+              <span className={Styles["sub-title-gradient"]}>
+                {t("overview.title.b")}
+              </span>
+            </div>
+            <div>
+              <span className={Styles["sub-title"]}>
+                {t("overview.title.c")}
+              </span>
+            </div>
+            <div className={Styles["description"]}>
+              {t("overview.description")}
+            </div>
+            <div
+              className={Styles["launch-btn"]}
+              onClick={() => onJumpUrl("https://download.hala.finance")}
+            >
+              {t("overview.button")}
+            </div>
+            <div className={Styles["tooltip"]}>
+              <span className={Styles["tooltip"]}>{t("overview.tooltip")}</span>
+            </div>
+          </div>
+
+          <div className={Styles["main-content"]}>
+            <img
+              className={Styles["feat"]}
+              src={isZh ? HomeFeatImgZh : HomeFeatImg}
+            />
+          </div>
+        </div>
+      </div>
       <DiscoverSection />
       <FeatureList />
 

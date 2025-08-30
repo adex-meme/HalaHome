@@ -16,11 +16,6 @@ export const en = {
       description:
         "",
       button: "Download App",
-      appStore: "APP Store",
-      googlePlay: "Google Play", 
-      android: "Android",
-      scanToDownload: "Scan to Download",
-      iOSAndAndroid: "iOS & Android App",
       tooltip:
         "Security • Privacy • On-chain Swap",
     },
