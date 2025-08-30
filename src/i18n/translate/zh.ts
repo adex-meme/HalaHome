@@ -1,5 +1,8 @@
 export const zh = {
   translation: {
+    general: {
+      comingSoon: "即将推出...",
+    },
     header: {
       home: "首页",
       roadMap: "路线图",
