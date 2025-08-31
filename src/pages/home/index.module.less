@@ -6,11 +6,13 @@
   max-height: 100vw;
   //min-height: 750px;
   box-sizing: border-box;
- /* 使图片适应容器 */
+  padding-top: 80px;
+  /* 使图片适应容器 */
   /* 居中对齐 */
   //background-color: #000;
   background: url("/public/images/css-image/overview-bg.png") no-repeat left top;
   background-size: cover;
+
   &.is-mobile {
     height: 750px;
   }
@@ -21,10 +23,12 @@
       flex-direction: column;
       justify-content: flex-start;
       height: 100%;
-      .title-panel{
-        height: fit-content!important;
+
+      .title-panel {
+        height: fit-content !important;
       }
-      .main-content{
+
+      .main-content {
         flex-grow: 1;
       }
     }
@@ -68,6 +72,7 @@
       //-webkit-background-clip: text;
       //-webkit-text-fill-color: transparent;
     }
+
     .sub-title-gradient {
       font-family: Poppins, Poppins;
       font-weight: 600;
@@ -81,6 +86,7 @@
       -webkit-text-fill-color: transparent;
 
     }
+
     .launch-btn {
       margin-top: 38px;
       width: 170px;
@@ -97,7 +103,7 @@
       align-items: center;
 
       font-weight: 500;
-      font-size:20px;
+      font-size: 20px;
       color: #FFFFFF;
       /* Frame 35 */
 
@@ -109,24 +115,29 @@
         filter: brightness(110%);
       }
     }
-    .description{
+
+    .description {
       white-space: pre-line;
       font-family: Poppins, Poppins;
       font-size: 20px;
       line-height: 1.3;
       margin-top: 38px;
     }
-    .tooltip{
+
+    .tooltip {
       position: absolute;
       width: 100%;
       color: #A0A0AC;
-      bottom:20px;
+      bottom: 20px;
+      font-size: 16px;
     }
+
     .main-content {
       display: flex;
       align-self: center;
       flex-direction: column;
       margin-bottom: 0;
+
       //justify-content: space-between;
       //align-items: flex-end;
       .feat {
