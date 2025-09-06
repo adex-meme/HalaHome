@@ -73,7 +73,6 @@ export const MainSection: React.FC<MainSectionProps> = ({ isMobile }) => {
                     level="M"
                     fgColor="#000000"
                     bgColor="#ffffff"
-                    margin={0} // Set to 0 for minimal white space
                   />
                 </div>
                 <div className={Styles["qr-text"]}>
