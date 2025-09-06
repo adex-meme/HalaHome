@@ -38,9 +38,9 @@ const Home: React.FC = () => {
   }, [location]);
 
   const onJumpUrl = (url?: string) => {
-    // if (!url) {
-      return message.info(t("general.comingSoon"));
-    // }
+    if (!url) {
+      return message.info("comming soon...");
+    }
 
     window.open(url);
   };

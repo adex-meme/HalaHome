@@ -1,8 +1,5 @@
 export const en = {
   translation: {
-    general: {
-      comingSoon: "Coming soon...",
-    },
     header: {
       home: "Home",
       roadMap: "Roadmap",

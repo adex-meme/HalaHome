@@ -7,7 +7,6 @@ import TgImg from "@/assets/images/link_tg.png";
 
 import Styles from "./index.module.less";
 import { useTranslation } from "react-i18next";
-import { message } from "antd";
 
 interface FooterCompProps {}
 const switchLang: Record<string, { to: string; name: string }> = {
@@ -22,9 +21,9 @@ const switchLang: Record<string, { to: string; name: string }> = {
 };
 const Footer: React.FC<FooterCompProps> = () => {
   const { t, i18n } = useTranslation();
-  const onJumpUrl = (url: string, forceComingSoon = false) => {
-    if (!url || forceComingSoon) {
-      return message.info(t("general.comingSoon"));
+  const onJumpUrl = (url: string) => {
+    if (!url) {
+      return;
     }
 
     window.open(url);
@@ -52,7 +51,7 @@ const Footer: React.FC<FooterCompProps> = () => {
       {
         name: "X",
         icon: XImg,
-        url: "https://x.com/hala_labs",
+        url: "https://x.com/Halafinance",
       },
     ];
   }, []);
@@ -69,7 +68,7 @@ const Footer: React.FC<FooterCompProps> = () => {
             <div
               key={appInfo.name}
               className={Styles["apps-item"]}
-              onClick={() => onJumpUrl(appInfo.url, true)}
+              onClick={() => onJumpUrl(appInfo.url)}
             >
               {appInfo.name}
             </div>
