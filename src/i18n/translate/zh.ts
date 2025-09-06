@@ -16,13 +16,13 @@ export const zh = {
       description:
         "",
       button: "下载应用",
-      appStore: "APP Store",
+      appStore: "iOS",
       googlePlay: "Google Play",
       android: "Android",
       scanToDownload: "扫码下载",
       iOSAndAndroid: "iOS & Android 应用",
       tooltip:
-        "安全 • 隐私 • 链上兑换",
+        "",
     },
     discover: {
       title: "人们为什么选择HALA?",

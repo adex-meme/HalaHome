@@ -16,13 +16,13 @@ export const en = {
       description:
         "",
       button: "Download App",
-      appStore: "APP Store",
+      appStore: "iOS",
       googlePlay: "Google Play", 
       android: "Android",
       scanToDownload: "Scan to Download",
       iOSAndAndroid: "iOS & Android App",
       tooltip:
-        "Security • Privacy • On-chain Swap",
+        "",
     },
     discover: {
       title: "Why \n HALA?",

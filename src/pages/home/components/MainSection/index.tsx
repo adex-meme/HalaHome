@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { message } from "antd";
 import classNames from "classnames";
 import { QRCodeSVG } from "qrcode.react";
-import { AppStoreIcon, GooglePlayIcon, AndroidIcon } from "@/components/Icons";
+import { AppStoreIcon, AndroidIcon } from "@/components/Icons";
 import Styles from "./index.module.less";
 import HomeFeatImg from "@/assets/images/overview/intro.png";
 import { APP_URL } from "../../data";
@@ -68,11 +68,12 @@ export const MainSection: React.FC<MainSectionProps> = ({ isMobile }) => {
               <div className={Styles["qr-section"]}>
                 <div className={Styles["qr-code"]}>
                   <QRCodeSVG 
-                    value="APP_URL"
+                    value="https://download.hala.finance"
                     size={137}
                     level="M"
                     fgColor="#000000"
                     bgColor="#ffffff"
+                    margin={0} // Set to 0 for minimal white space
                   />
                 </div>
                 <div className={Styles["qr-text"]}>

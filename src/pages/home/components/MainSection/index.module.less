@@ -21,12 +21,13 @@
 
   .content {
     display: flex;
-    align-items: center;
+    align-items: flex-end; // Align both left and right content to bottom
     justify-content: space-between;
     gap: 80px;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
+      align-items: center;
       gap: 60px;
       text-align: center;
       width: 100%;
@@ -83,13 +84,13 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 48px;
-    margin-bottom: 48px;
+    margin-bottom: 28.8px; // Reduced by 20% to compensate for button movement (48px * 0.8 = 38.4px, but adjusted to 28.8px to maintain visual balance)
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
       align-items: center;
       gap: 32px;
-      margin-bottom: 32px;
+      margin-bottom: 25.6px; // Reduced by 20% (32px * 0.8 = 25.6px)
     }
   }
 
@@ -97,6 +98,7 @@
     display: flex;
     flex-direction: row;
     gap: 16px;
+    margin-top: 20%; // Move buttons down by 20%
 
     @media screen and (max-width: 768px) {
       flex-direction: row;
@@ -112,6 +114,7 @@
   .download-btn {
     display: flex;
     align-items: center;
+    justify-content: center; // Absolutely center content
     gap: 12px;
     padding: 12px 24px;
     background: linear-gradient(128deg, #5BC4FF 0%, #4D5EFF 12%, #6362FF 67%, #C970FF 100%);
@@ -126,7 +129,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     min-width: 188px;
     // height: 52px;
-    justify-content: flex-start;
 
     &:hover {
       transform: translateY(-2px);
@@ -227,12 +229,13 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end; // Keep bottom alignment for the illustration
     position: relative;
 
     @media screen and (max-width: 768px) {
       flex: none;
       width: 100%;
+      align-items: center; // Keep centered on mobile
     }
   }
 
@@ -240,6 +243,8 @@
     position: relative;
     max-width: 556px;
     width: 100%;
+    transform: scale(1.5) translateY(-50px); // Move up by 50px to adjust position
+    transform-origin: center;
 
     img {
       width: 100%;
@@ -249,10 +254,12 @@
 
     @media screen and (max-width: 768px) {
       max-width: 900px;
+      transform: scale(1.5); // Reset transform on mobile
     }
 
     @media screen and (max-width: 480px) {
       max-width: 900px;
+      transform: scale(1.5); // Reset transform on mobile
     }
   }
 
