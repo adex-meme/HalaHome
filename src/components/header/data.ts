@@ -1,1 +1,1 @@
-export const Privacy_URL = "https://docs.hala.finance/privacy";
+export const Privacy_URL = "https://docs.Hypergram.vip/privacy";

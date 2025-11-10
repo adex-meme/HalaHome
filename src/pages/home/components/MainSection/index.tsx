@@ -68,7 +68,7 @@ export const MainSection: React.FC<MainSectionProps> = ({ isMobile }) => {
               <div className={Styles["qr-section"]}>
                 <div className={Styles["qr-code"]}>
                   <QRCodeSVG 
-                    value="https://download.hala.finance"
+                    value="https://download.Hypergram.finance"
                     size={137}
                     level="M"
                     fgColor="#000000"

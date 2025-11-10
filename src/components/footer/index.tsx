@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 
-import IntroImg from "@/assets/images/intro.png";
+import LogoImg from "@/assets/images/logo.png";
 import I18nImg from "@/assets/images/footer/i18n.png";
 import XImg from "@/assets/images/link_x.png";
 import TgImg from "@/assets/images/link_tg.png";
@@ -32,11 +32,11 @@ const Footer: React.FC<FooterCompProps> = () => {
     return [
       {
         name: t("footer.dapps.iphone"),
-        url: "https://download.hala.finance",
+        url: "https://download.Hypergram.finance",
       },
       {
         name: t("footer.dapps.android"),
-        url: "https://download.hala.finance",
+        url: "https://download.Hypergram.finance",
       },
     ];
   }, [t]);
@@ -46,12 +46,12 @@ const Footer: React.FC<FooterCompProps> = () => {
       {
         name: "telegram",
         icon: TgImg,
-        url: "https://t.me/Halafinance",
+        url: "https://t.me/Hypergramfinance",
       },
       {
         name: "X",
         icon: XImg,
-        url: "https://x.com/Halafinance",
+        url: "https://x.com/Hypergramfinance",
       },
     ];
   }, []);
@@ -59,7 +59,7 @@ const Footer: React.FC<FooterCompProps> = () => {
     <div className={Styles["footer"]}>
       <div className={Styles["footer__container"]}>
         <div className={Styles["intro"]}>
-          <img className={Styles["intro-icon"]} src={IntroImg} alt="intro" />
+          <img className={Styles["intro-icon"]} src={LogoImg} alt="logo" />
           <div className={Styles["intro-content"]}>{t("footer.intro")}</div>
         </div>
         <div className={Styles["apps"]}>

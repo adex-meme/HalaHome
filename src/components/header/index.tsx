@@ -57,14 +57,14 @@ const Header: React.FC<HeaderCompProps> = () => {
   };
 
   const onToDoc = () => {
-    onJumpUrl("https://docs.hala.finance");
+    onJumpUrl("https://docs.hypergram.vip");
   };
 
   // const onToDataGraph = () => {
   //   navigate("/data-graph");
   // };
   const onToGithub = () => {
-    onJumpUrl("https://github.com/HALA-finance");
+    onJumpUrl("https://github.com/Hypergram-vip");
   };
 
   const onJumpUrl = (url?: string) => {
